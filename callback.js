@@ -8,7 +8,9 @@ function placeOrder(customerName, orderNumber) {
 
 // Cook food function
 function cookFood(callBack) {
-    setTimeout(callBack, 5000);
+    var rnd = Math.random() * (1000 * 10);
+    console.log('ETA: ' + rnd.toFixed(0) + ' miliseconds');
+    setTimeout(callBack, rnd.toFixed(0));
 }
 
 var customers = [
